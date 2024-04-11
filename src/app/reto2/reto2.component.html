@@ -1,0 +1,24 @@
+<h1>INGRESO DE PRODUCTOS A STOCK</h1>
+<div>
+    <div>
+        <label for="descripcion">DESCRIPCIÓN</label>&nbsp;
+        <input type="text" id="descripcion" name="descripcion" [(ngModel)]="descripcion">
+    </div>
+    <div>
+        <label for="codigo">CÓDIGO</label>&nbsp;
+        <input type="number" id="codigo" name="codigo" [(ngModel)]="codigo">&nbsp;&nbsp;
+        <label for="precioCosto">PRECIO COSTO $</label>&nbsp;
+        <input type="number" id="precioCosto" name="precioCosto" [(ngModel)]="precioCosto">
+    </div>
+    <div>
+        <label for="precioVenta">PRECIO VENTA $</label>&nbsp;
+        <input type="number" id="precioVenta" name="precioVenta" [(ngModel)]="precioVenta">&nbsp;&nbsp;
+        <label for="stockIdeal">STOCK IDEAL </label>&nbsp;
+        <input type="number" id="stockIdeal" name="stockIdeal" [(ngModel)]="stockIdeal">
+    </div>
+    <div>
+        <button type="submit">MODIFICAR</button>&nbsp;
+        <button type="submit" (click)="darAlta()">INGRESAR</button>&nbsp;
+        <button type="submit">SALIR</button>&nbsp;
+    </div>
+</div>

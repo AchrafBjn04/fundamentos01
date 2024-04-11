@@ -1,0 +1,15 @@
+<h1>Registro</h1>
+<div>
+    <label>Email: </label>
+    <input type="email" placeholder="Introduce tu email" [(ngModel)]="email">
+</div>
+<div>
+    <label>Password: </label>
+    <input type="password" placeholder="Introduce tu contraseña" [(ngModel)]="password">
+</div>
+<div>
+    <label>Repeat the Password: </label>
+    <input type="password" placeholder="Repite la contraseña" [(ngModel)]="repeatPassword">
+</div>
+<button type="submit" (click)="validPassword()">Registrarse</button>
+
